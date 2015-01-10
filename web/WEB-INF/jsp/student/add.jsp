@@ -12,7 +12,7 @@
 </head>
 <body>
 
-    <form action="student/save.do" method="post">
+    <form action="${pageContext.request.contextPath}/student/save.do" method="post">
         <table>
             <tr>
                 <th colspan="2">学生添加</th>

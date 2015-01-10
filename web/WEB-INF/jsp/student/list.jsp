@@ -27,7 +27,11 @@
                 <td>${student.id}</td>
                 <td>${student.name}</td>
                 <td>${student.age}</td>
-                <td><a href="${pageContext.request.contextPath}/student/preSave.do?id=${student.id}">修改</a> </td>
+                <td>
+                    <a href="${pageContext.request.contextPath}/student/preSave.do?id=${student.id}">修改</a>
+                    &nbsp;&nbsp;
+                    <a href="${pageContext.request.contextPath}/student/delete.do?id=${student.id}">删除</a>
+                </td>
             </tr>
         </c:forEach>
     </table>
